@@ -1,0 +1,70 @@
+/* CSS code for image gallery */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #333;
+}
+
+#gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #777;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  margin: 0 5px;
+}
+
+img {
+  border: 3px solid #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+img:hover {
+  border-color: #ccc;
+}
+
+/* Thumbnail styles */
+li:not(:first-child) img {
+  filter: grayscale(100%);
+}
+
+li:not(:first-child) img:hover {
+  filter: none;
+}
+
+/* Featured image styles */
+figure img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
